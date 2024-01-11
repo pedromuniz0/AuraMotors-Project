@@ -32,16 +32,22 @@ body {
 
 /* Nav CSS */
 
-
 nav {
   background: linear-gradient(-30deg, var(--main-blue10), var(--main-blue20));
   box-shadow: 0 2px 10px;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 3.5rem;
+  padding: .5rem 3.5rem;
   align-items: center;
   flex-wrap: wrap;
-  height: 10rem;
+  /* height: 10rem; */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav.sticky {
+  padding: 1rem 2.5rem;
 }
 
 @media only screen and (max-width: 912px) {
@@ -188,10 +194,10 @@ nav ul:hover {
 }
 
 /* Main CSS */
-
 main {
   width: 100%;
   margin: 0 auto;
+  margin-top: 7rem;
   padding-bottom: 10rem;
 }
 
@@ -206,9 +212,11 @@ main {
 }
 
 .main__title div {
-  background-color: rgba(33, 31, 46, 0.301);
-  border-radius: 10px;
-  padding: 1rem;
+  background-color: rgba(33, 31, 46, .2);
+  box-shadow: 0 1px 22px hsl(0, 0%, 18%);
+  color: var(--main-blue40);
+  border-radius: 10px 10px 10% 10%;
+  padding: 2rem;
   min-width: 42%;
   margin: 0 auto;
 }
@@ -221,7 +229,7 @@ main {
   background-image: url('assets/images/auramotors-banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 10%;
+  background-position-y: 6%;
   overflow: hidden;
   border-top: 1.5rem inset var(--main-blue10);
   border-bottom: 1.5rem inset var(--main-blue20);
@@ -233,7 +241,6 @@ main {
 
 .projects-container {
   background: linear-gradient(-30deg, var(--main-blue20), var(--main-blue30));
-
   background-size: cover;
   padding-top: .5rem;
   width: 90%;
@@ -457,8 +464,8 @@ main {
 }
 
 @media only screen and (max-width: 525px) {
-  .section__team {
-    min-width: 326px;
+  .team-container {
+    
   }
 }
 

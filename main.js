@@ -1,12 +1,4 @@
-// Star Widget
-
-var stars = document.querySelectorAll;
-('.starWidget a');
-
-stars.forEach((item, index1) => {
-  item.addEventListener('click', () => {
-    stars.forEach((starWidget, index2) => {
-      index1 >= index2 ? starWidget.classList.add('active') : starWidget.classList.remove('active');
-    })
-  })
+window.addEventListener('scroll', function(){
+  var nav = document.querySelector('nav');
+  nav.classicList.toggle('sticky', window.scrollY > 0);
 })
