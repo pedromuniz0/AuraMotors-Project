@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AuraMotors SA</title>
 
-  <link rel="icon" type="image/x-icon" href="./assets/images/icons8-carro-pastel-16.png">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <!-- ICONS -->
   <script src="https://kit.fontawesome.com/590d27de59.js" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="main.js"></script>
 
 </head>
 <body>
@@ -18,7 +20,7 @@
   <header>
     <nav>
       <div class="nav__logo">
-        <img class="logo-image" src="assets/images/icons8-car-100.png" alt="AuraMotors Logo">
+        <img class="logo-image" src="./assets/images/logo.png" alt="AuraMotors Logo">
         <div>
 
         </div>
@@ -28,16 +30,20 @@
       <div class="nav__right">
         <ul class="nav__pages">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Cars</a></li>
+          <li><a href="#cars-link">Cars</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="nav__smedia">
-          <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img id="logo" width="100" height="100" src="https://img.icons8.com/stickers/100/instagram-new--v2.png" alt="instagram-new--v2"/>
+          </a>
         </div>
       </div>
     </nav>
   </header>
+
+  <div class="overlay"></div>
 
   <main>
     <div class="main__title">
@@ -49,30 +55,34 @@
 
     <section class="projects-container">
         <div class="title">
-          <h2>Our Mobility Portfolio</h2>
-          <p>Impacting diverse sectors of mobility to better the human experience and the world we inhabit</p> 
+          <h2 id="cars-link">Drive the Future, Feel the Thrill</h2>
+          <p>Unleash Your Journey with AutoMotors – Where Innovation Meets Adrenaline.</p> 
         </div>
 
         <div class="main__cars">
-          <div>
+          <div class="car-box">
             <h2>Atom</h2>
-            <img src="assets/images/1ah6d7jz.bmp" alt="">
-            <p>Lorem ipsum dolor sit.</p>
+            <img src="assets/images/car-images/atom.bmp" alt="">
+            <p>The AutoMotors <span>ATOM</span>: Unleash speed in a compact package. Precision meets thrill.</p>
+            <button>Learn More</button>
           </div>
-          <div>
+          <div class="car-box">
             <h2>Geodos</h2>
-            <img src="assets/images/2150796894.jpg" alt="">
+            <img src="assets/images/car-images/geodos.jpg" alt="">
             <p>Lorem ipsum dolor sit.</p>
+            <button>Learn More</button>
           </div>
-          <div>
+          <div class="car-box">
             <h2>Plague</h2>
-            <img src="assets/images/2150796900.jpg" alt="">
+            <img src="assets/images/car-images/kreta.jpg" alt="">
             <p>Lorem ipsum dolor sit.</p>
+            <button>Learn More</button>
           </div>
-          <div>
+          <div class="car-box">
             <h2>Kreta</h2>
-            <img id="plague" src="assets/images/2150796896.jpg" alt="">
+            <img id="plague" src="assets/images/car-images/plague.jpg" alt="">
             <p>Lorem ipsum dolor sit.</p>
+            <button>Learn More</button>
           </div>
         </div>
     </section>
@@ -119,7 +129,7 @@
   <footer>
     <div id="footer-grid">
       <div class="footer__logo">
-        <img class="logo-image" src="assets/images/icons8-car-100.png" alt="AuraMotors Logo">
+        <img class="logo-image" src="assets/images/logo.png" alt="AuraMotors Logo">
         <div>
   
         </div>
